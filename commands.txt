@@ -13,6 +13,10 @@ terraform plan -out <Plan Name>
 5) Apply Terraform -> Start deployment of resources
 terraform apply myplan1
 
+or 
+
+terraform apply -auto-approve
+
 6) Show Terraform -> Shows details response of deployment
 terraform show
 
