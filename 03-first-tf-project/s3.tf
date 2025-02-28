@@ -5,7 +5,7 @@ resource "random_id" "bucket_suffix" {
 
 # Create a S3 bucket
 resource "aws_s3_bucket" "my_test_bucket" {
-  bucket = "example-bucket-${random_id.bucket_suffix.hex}"
+  bucket = "my_test_bucket-${random_id.bucket_suffix.hex}"
 }
 
 # Get the name of s3 bucket on the output
