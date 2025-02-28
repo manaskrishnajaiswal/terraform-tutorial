@@ -30,9 +30,9 @@ data "aws_s3_bucket" "name" {
 
 # Varaible block -> used to set variables and can be used in other code blocks
 variable "bucket_name" {
-    type = string
-    description = "It is used to set bucket name"
-    default = "my-default-bucket-name"
+  type        = string
+  description = "It is used to set bucket name"
+  default     = "my-default-bucket-name"
 }
 
 # Output block -> used to set variable to output of any code block

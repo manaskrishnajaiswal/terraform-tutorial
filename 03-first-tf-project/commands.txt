@@ -1,0 +1,34 @@
+1) Initialize Terraform
+terraform init
+
+2) Format Terraform Files
+terraform fmt --recursive
+
+3) Validate Terraform Files
+terraform validate
+
+4) Plan Terraform -> used to to planning for out deployment
+terraform plan -out <Plan Name>
+
+5) Apply Terraform -> Start deployment of resources
+terraform apply myplan1
+
+6) Show Terraform -> Shows details response of deployment
+terraform show
+
+or
+
+terraform show myplan1
+
+7) State List Terraform -> Show the list of deployment resources
+terraform state list
+
+8) Destroy Terraform -> Used to remove or delete all terraform resources
+terraform plan -destroy -out destroyplan1
+
+then
+
+terraform apply destroyplan1
+
+9) Help Terraform -> used to get help from cli terraform commnads
+terraform -help
